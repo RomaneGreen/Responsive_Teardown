@@ -1,0 +1,139 @@
+
+*{
+    background-color:white;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color:gray;
+    height:5.5rem;
+    
+}
+
+
+section{
+    background-color: lightgray;
+    height: 35.5rem;
+    width:45.0rem;
+    display: inline-block;
+
+}
+
+nav{
+   background-color: darkgray;
+   height: 60rem;
+   width: 15rem;
+   z-index: 1;
+   float: left;
+   display: inline-block;
+}
+
+
+aside{
+    background-color:slategray;
+    height: 75.5rem;
+    width:24.0rem;
+    display: inline-block;
+    float: right;
+    
+}
+
+.primero{
+   background-color:gainsboro;
+   height: 35.5rem;
+   width:45.0rem;
+   display: block;
+   margin-left:15rem;
+
+}
+
+.ultimo{
+    background-color:cornsilk;
+    height: 35.5rem;
+    width:45.0rem;
+    display: block;
+    margin-left:15rem;
+ 
+ }
+
+
+
+h1,h2,h3,h4{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    h4{
+        display: inline;
+    }
+
+    
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+   h1{ display: inline;
+   }
+  nav{
+      display: none;
+  }
+  section{
+      width:30.0rem;
+  }
+  aside{
+      width:17.8rem;
+      height: 36rem;
+  }
+
+  .primero,.ultimo{
+      position: relative;
+      right:15rem;
+      
+  }
+   
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+   h2{ display: inline;
+   }
+
+   aside{
+       display: none;
+   }
+   section{
+       width:15rem;
+       
+   }
+}
+
+@media all and (max-width: 480px) {
+   h3 { display: block;
+   }
+   nav,aside{
+       display: none
+   }
+   .primero,.ultimo{
+    position: relative;
+    right:15rem;
+   }
+
+ }
